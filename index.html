@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier d'Achat</title>
+    <link rel="stylesheet" href="./vendors/fontawesome/css/all.min.css">
+    <!-- lien de bootstrap -->
+    <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <h1 class="text-center mt-2">Panier d'Achat</h1>
+
+    <h2 class="text-center mb-4">Produits</h2>
+    <div class="product text-center mb-3">
+        <span>Pomme - 1000 frcfa</span>
+        <button onclick="addToCart(1, 'Orange', 100)" class="btn btn-info">Ajouter au panier</button>
+    </div>
+    <div class="product text-center mb-3">
+        <span>Banane - 1000 frcfa</span>
+        <button onclick="addToCart(2, 'Banane', 100)" class="btn btn-info">Ajouter au panier</button>
+    </div>
+    <div class="product text-center">
+        <span>Orange -  1000 frcfa</span>
+        <button onclick="addToCart(3, 'Pomme', 200)" class="btn btn-info">Ajouter au panier</button>
+    </div>
+
+    <h2 class="mx-2">Mon Panier <i class="fa-solid fa-cart-shopping text-warning"></i></h2>
+    <div id="cart-items"></div>
+    <div id="total"></div>
+
+
+
+    <script src="./vendors/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./js/javascript.js"></script>
+</body>
+</html>
